@@ -402,4 +402,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_oe_chatter" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;&#9;&lt;field name=&quot;message_follower_ids&quot; groups=&quot;base.group_user&quot;/&gt;&#10;&#9;&lt;field name=&quot;activity_ids&quot;/&gt;&#10;&#9;&lt;field name=&quot;message_ids&quot;/&gt;&#10;&lt;/div&gt;" description="Add chatter div Code on view" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
