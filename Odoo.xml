@@ -221,7 +221,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="odoo_notebook" value="&lt;notebook&gt;&#10;    &lt;page string=&quot;$page_label$&quot;&gt;&#10;        &lt;group&gt;&#10;            &lt;field name=&quot;$field_name$&quot;/&gt;&#10;        &lt;/group&gt;&#10;    &lt;/page&gt;&#10;&lt;/notebook&gt;" description="Add Notebook and a page" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_notebook" value="&lt;notebook&gt;&#10;    &lt;page string=&quot;$page_label$&quot; name=&quot;$page_label$&quot;&gt;&#10;        &lt;group&gt;&#10;            &lt;field name=&quot;$field_name$&quot;/&gt;&#10;        &lt;/group&gt;&#10;    &lt;/page&gt;&#10;&lt;/notebook&gt;" description="Add Notebook and a page" toReformat="false" toShortenFQNames="true">
     <variable name="page_label" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -242,7 +242,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="odoo_form_header" value="&lt;header&gt;&#10;    &lt;button name=&quot;$method_name$&quot; string=&quot;$string_label$&quot; class=&quot;oe_highlight&quot; states=&quot;&quot; type=&quot;object&quot;/&gt;&#10;    &lt;field name=&quot;state&quot; widget=&quot;statusbar&quot; statusbar_visible=&quot;&quot;/&gt;&#10;&lt;/header&gt;" description="Add Form's header with 'state' and buttons" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_form_header" value="&lt;header&gt;&#10;    &lt;button name=&quot;$method_name$&quot; string=&quot;$string_label$&quot; class=&quot;oe_highlight&quot; states=&quot;&quot; type=&quot;object&quot;/&gt;&#10;    &lt;field name=&quot;state&quot; widget=&quot;statusbar&quot; statusbar_visible=&quot;&quot; options=&quot;{'clickable':'1'}/&gt;&#10;&lt;/header&gt;" description="Add Form's header with 'state' and buttons" toReformat="false" toShortenFQNames="true">
     <variable name="method_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="string_label" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -402,7 +402,25 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="odoo_oe_chatter" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;&#9;&lt;field name=&quot;message_follower_ids&quot; groups=&quot;base.group_user&quot;/&gt;&#10;&#9;&lt;field name=&quot;activity_ids&quot;/&gt;&#10;&#9;&lt;field name=&quot;message_ids&quot;/&gt;&#10;&lt;/div&gt;" description="Add chatter div Code on view" toReformat="true" toShortenFQNames="true">
+  <template name="odoo_form_chatter" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;&#9;&lt;field name=&quot;message_follower_ids&quot; groups=&quot;base.group_user&quot;/&gt;&#10;&#9;&lt;field name=&quot;activity_ids&quot;/&gt;&#10;&#9;&lt;field name=&quot;message_ids&quot;/&gt;&#10;&lt;/div&gt;" description="Add chatter div Code on view" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_search_searchpanel" value="&lt;searchpanel&gt;&#10;&#9;&lt;field name=&quot;$name$&quot; string=&quot;$name$&quot; icon=&quot;fa-users&quot; select=&quot;multi&quot; enable_counters=&quot;1&quot;/&gt;&#10;&lt;/searchpanel&gt;" description="Add search searchpanel on view" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_field_view" value="&lt;field name=&quot;$name$&quot; string=&quot;$name$&quot;/&gt;" description="Add commun field on view" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_field_view_html" value="&lt;field name=&quot;$name$&quot; placeholder=&quot;&quot;/&gt;" description="Add commun field on view" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
