@@ -8,9 +8,7 @@ Here is a little help that's show how you can use this template : https://www.os
 
 
 
-
-
-### Extensions installation
+### 1. Extensions installation
 
 1. (Recommended) Install [XPathView](https://plugins.jetbrains.com/plugin/12478-xpathview--xslt) to support XML view inheritance features.
 2. (Recommended) Install [CSV Plugin](https://plugins.jetbrains.com/plugin/10037-csv) to support code completion and navigation in CSV files.
@@ -18,7 +16,7 @@ Here is a little help that's show how you can use this template : https://www.os
 4. (Recommended) Install [Odoo File Support]([Odoo - IntelliJ IDEs Plugin | Marketplace](https://plugins.jetbrains.com/plugin/12952-odoo)) to support code completion and navigation in CSV files.
 
 
-### Manual installation
+### 2. Manual installation
 
 1. Download `Odoo.xml` file: [click here](https://github.com/yangxunbo/odoo-pycharm-templates/raw/master/Odoo.xml) 
 
