@@ -339,4 +339,39 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="odoo_transient_action" value="&lt;record id=&quot;$id$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;" description="Create new Transient Action" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_activity_view" value=" &lt;record id=&quot;$id$_activity&quot; model=&quot;ir.ui.view&quot;&gt;&#10;        &lt;field name=&quot;name&quot;&gt;$name$.activity&lt;/field&gt;&#10;        &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;        &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;            &lt;activity string=&quot;&quot;&gt;&#10;                &lt;field name=&quot;$m2o$&quot;/&gt;&#10;                &#10;                &lt;templates&gt;&#10;                    &lt;div t-name=&quot;activity-box&quot;&gt;&#10;                        &lt;img t-att-src=&quot;activity_image('ImageModel', 'ImageFiled', record.$m2o$.raw_value)&quot;&#10;                             t-att-title=&quot;record.$m2o$.value&quot; t-att-alt=&quot;record.$m2o$.value&quot;/&gt;&#10;                        &lt;div&gt;&#10;                            &lt;field name=&quot;ref&quot;/&gt;&#10;                        &lt;/div&gt;&#10;                    &lt;/div&gt;&#10;                &lt;/templates&gt;&#10;            &lt;/activity&gt;&#10;        &lt;/field&gt;&#10;    &lt;/record&gt;" description="Create new Activity View" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="m2o" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_transient_form" value="        &lt;record id=&quot;transient_$id$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;transient.$model$.form&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;form string=&quot;&quot;&gt;&#10;&#10;                    &lt;group&gt;&#10;                        &lt;field name=&quot;$m2o$&quot;/&gt;&#10;                    &lt;/group&gt;&#10;                    &lt;group&gt;&#10;&#10;                    &lt;/group&gt;&#10;                    &lt;footer&gt;&#10;                        &lt;button string=&quot;Confirm&quot;&#10;                                class=&quot;btn btn-primary&quot;&#10;                                name=&quot;confirm&quot;&#10;                                data-hotkey=&quot;q&quot;&#10;                                type=&quot;object&quot;/&gt;&#10;                        &lt;button special=&quot;cancel&quot; data-hotkey=&quot;z&quot; string=&quot;Cancel&quot;/&gt;&#10;                    &lt;/footer&gt;&#10;                &lt;/form&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;" description="Create new transient form View" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="m2o" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_objcet_transient" value="class $class_name$(models.TransientModel):&#10;    _name = '$object_name$'&#10;    _description = '$desc$'&#10;&#10;    $field_name$ = fields.Char(string=&quot;$field_label$&quot;, required=False, )&#10;" description="Create New Odoo Object" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="object_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
