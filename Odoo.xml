@@ -374,4 +374,11 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_field_Reference" value="$field_name$ = fields.Reference(string=&quot;$field_label$&quot;, selection=[('', ''), ('', ''), ], required=False, )" description="Add new field of type Reference" toReformat="false" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
