@@ -381,4 +381,11 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_server_action" value="  &lt;record id=&quot;action_$id$&quot; model=&quot;ir.actions.server&quot;&gt;&#10;        &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;        &lt;field name=&quot;type&quot;&gt;ir.actions.server&lt;/field&gt;&#10;        &lt;field name=&quot;model_id&quot; ref=&quot;model.model_modelname&quot;/&gt;&#10;        &lt;field name=&quot;binding_model_id&quot; ref=&quot;model.model_modelname&quot;/&gt;&#10;        &lt;field name=&quot;binding_view_types&quot;&gt;list,form&lt;/field&gt;&#10;        &lt;field name=&quot;state&quot;&gt;code&lt;/field&gt;&#10;        &lt;field name=&quot;code&quot;&gt;&#10;&#10;        &lt;/field&gt;&#10;    &lt;/record&gt;" description="Create ServerAction View" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
