@@ -388,4 +388,13 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="odoo_calendar" value="&lt;record id=&quot;view_$tree_id$_calendar&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$object_name$.calendar&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$object_name$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;  &#9;&#9;&lt;calendar string=&quot;&quot; date_start=&quot;&quot; color=&quot;&quot; hide_time=&quot;&quot; event_litmit=&quot;&quot; mode=&quot;month&quot; date_delay=&quot;&quot; quick_add=&quot;0&quot; hide_time=&quot;1&quot; form_view_id=&quot;%($packname$.view_$viewformid$_form)d&quot; event_open_popup=&quot;1&quot; event_limit=&quot;5&quot;&gt;&#10;                &lt;field name=&quot;name&quot; invisible=&quot;1&quot; filters=&quot;1&quot; avatar_field=&quot;image&quot;/&gt;&#10;        &lt;/calendar&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create calendar View" toReformat="false" toShortenFQNames="true">
+    <variable name="tree_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="object_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="packname" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="viewformid" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
