@@ -397,4 +397,11 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="odoo_field_Monetary" value="$field_name$ = fields.Monetary(string=&quot;$field_label$&quot;,  required=False, currency_field='currency_id',)" description="Add new field of type Float" toReformat="false" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
