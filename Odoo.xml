@@ -261,7 +261,7 @@
     <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="odoo_object_button" value="&lt;button name=&quot;$button_method_name$&quot; class=&quot;oe_highlight&quot; type=&quot;object&quot; string=&quot;ObjectButton&quot; class=&quot;oe_highlight&quot;/&gt;" description="Add Odoo button" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_object_button" value="&lt;button name=&quot;$button_method_name$&quot; type=&quot;object&quot; string=&quot;ObjectButton&quot; class=&quot;oe_highlight&quot;/&gt;" description="Add Odoo button" toReformat="false" toShortenFQNames="true">
     <variable name="button_method_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
